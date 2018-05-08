@@ -1,3 +1,6 @@
+## 0.4.6 (May 8, 2018)
+  - Change cookbook location
+
 ## 0.4.5 (Jan 18, 2017)
   - Release to community
 
