@@ -115,12 +115,10 @@ Also you may see examples in fixture cookbook: test/fixtures/cookbooks/mongotest
 6. Submit a Pull Request using Github
 
 ## License & Authors
-* Author:: Azat Khadiev (akhadiev@parallels.com)
+* Author:: Azat Khadiev (anuriq)
 * Author:: Andrei Skopenko (andrei@skopenko.net)
 
 ```text
-Copyright:: 2016-2017 Parallels International GmbH
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at

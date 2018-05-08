@@ -87,7 +87,6 @@ action :create do
       db = client.database
       db.command('replSetInitiate' => replicaset_config)
       new_resource.updated_by_last_action(true)
-
     rescue Mongo::Auth::Unauthorized, Mongo::Error => e
       raise "Can't configure replica set #{new_resource.name}:\n#{e}"
     end
