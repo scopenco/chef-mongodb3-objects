@@ -8,7 +8,7 @@ version '0.4.6'
 source_url 'https://github.com/scopenco/chef-mongodb3-objects'
 issues_url 'https://github.com/scopenco/chef-mongodb3-objects/issues'
 
-chef_version '~> 13'
+chef_version '~> 14'
 
 supports 'centos', '>= 6.0'
 supports 'redhat', '>= 6.0'
