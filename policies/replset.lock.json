@@ -1,0 +1,237 @@
+{
+  "revision_id": "d671a728c62b627118b5437d5caab1b4d33f95059835432e8f77b64420624d8a",
+  "name": "replset",
+  "run_list": [
+    "recipe[mongotest::test_replset]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apt": {
+      "version": "7.0.0",
+      "identifier": "ba17b16fdbd3a336d2eaff7afa3004880202269a",
+      "dotted_decimal_identifier": "52380396521509795.15431555492805168.4982195758746",
+      "cache_key": "apt-7.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.0.0/download",
+        "version": "7.0.0"
+      }
+    },
+    "mongo_chef_gem": {
+      "version": "0.2.2",
+      "identifier": "1833735053acbedbd960d2a046d0c0d9fcdc592e",
+      "dotted_decimal_identifier": "6811969802972350.61882029773440720.212042482735406",
+      "cache_key": "mongo_chef_gem-0.2.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mongo_chef_gem/versions/0.2.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mongo_chef_gem/versions/0.2.2/download",
+        "version": "0.2.2"
+      }
+    },
+    "mongodb3": {
+      "version": "5.3.0",
+      "identifier": "218b6e2efca70ae93ee1a15e2bfc8aa71e507081",
+      "dotted_decimal_identifier": "9441979582424842.65652808369449980.152450372759681",
+      "cache_key": "mongodb3-16dc4137ec310e279bd82d2ff6432de5732faf11",
+      "origin": "git://github.com/loki-dv/chef-mongodb3.git",
+      "source_options": {
+        "git": "git://github.com/loki-dv/chef-mongodb3.git",
+        "revision": "16dc4137ec310e279bd82d2ff6432de5732faf11",
+        "branch": "master"
+      }
+    },
+    "mongodb3-objects": {
+      "version": "0.4.6",
+      "identifier": "c38a727ee24297d27af1185f7bce21299a046b1b",
+      "dotted_decimal_identifier": "55039844818240151.59244921023855566.36462561356571",
+      "source": "..",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/loki-dv/chef-mongodb3-objects.git",
+        "revision": "f8694519fc9c70e6ff50c0fec68d57d6d694e3b2",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/Replace_deprecated_node.set_to_node.default"
+        ]
+      },
+      "source_options": {
+        "path": ".."
+      }
+    },
+    "mongotest": {
+      "version": "0.0.0",
+      "identifier": "301c3fa5f7b90fa9fb4f73413c699a4781cc85dd",
+      "dotted_decimal_identifier": "13541858575104271.47845589718744169.169631911019997",
+      "source": "../test/fixtures/cookbooks/mongotest",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/loki-dv/chef-mongodb3-objects.git",
+        "revision": "f8694519fc9c70e6ff50c0fec68d57d6d694e3b2",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/Replace_deprecated_node.set_to_node.default"
+        ]
+      },
+      "source_options": {
+        "path": "../test/fixtures/cookbooks/mongotest"
+      }
+    },
+    "packagecloud": {
+      "version": "1.0.0",
+      "identifier": "d1f6f125abc3396fbb368f4104b248469cee9af1",
+      "dotted_decimal_identifier": "59099785712091961.31449565420913842.79468117793521",
+      "cache_key": "packagecloud-1.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/packagecloud/versions/1.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/packagecloud/versions/1.0.0/download",
+        "version": "1.0.0"
+      }
+    },
+    "runit": {
+      "version": "1.7.8",
+      "identifier": "442e13619b72ba6b3ce3fcb00055e75e564e610a",
+      "dotted_decimal_identifier": "19190959193158330.30184772402675797.254392360919306",
+      "cache_key": "runit-1.7.8-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/runit/versions/1.7.8/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/runit/versions/1.7.8/download",
+        "version": "1.7.8"
+      }
+    },
+    "user": {
+      "version": "0.7.0",
+      "identifier": "20811bf2f6e62596d99c589bee75acca7475c0da",
+      "dotted_decimal_identifier": "9149156295108133.42460512031338101.189985537245402",
+      "cache_key": "user-0.7.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/user/versions/0.7.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/user/versions/0.7.0/download",
+        "version": "0.7.0"
+      }
+    },
+    "yum": {
+      "version": "5.1.0",
+      "identifier": "705aaff4ddd04afff64efc8c738cfea4fd628e82",
+      "dotted_decimal_identifier": "31624909165547594.72046938166162316.279984579186306",
+      "cache_key": "yum-5.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/5.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum/versions/5.1.0/download",
+        "version": "5.1.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apt",
+        "= 7.0.0"
+      ],
+      [
+        "mongo_chef_gem",
+        "= 0.2.2"
+      ],
+      [
+        "mongodb3",
+        ">= 0.0.0"
+      ],
+      [
+        "mongodb3-objects",
+        ">= 0.0.0"
+      ],
+      [
+        "mongotest",
+        ">= 0.0.0"
+      ],
+      [
+        "packagecloud",
+        "= 1.0.0"
+      ],
+      [
+        "runit",
+        "= 1.7.8"
+      ],
+      [
+        "user",
+        "= 0.7.0"
+      ],
+      [
+        "yum",
+        "= 5.1.0"
+      ]
+    ],
+    "dependencies": {
+      "apt (7.0.0)": [
+
+      ],
+      "mongo_chef_gem (0.2.2)": [
+
+      ],
+      "mongodb3 (5.3.0)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ],
+        [
+          "yum",
+          ">= 0.0.0"
+        ],
+        [
+          "user",
+          ">= 0.0.0"
+        ],
+        [
+          "runit",
+          "~> 1.7.0"
+        ]
+      ],
+      "mongodb3-objects (0.4.6)": [
+        [
+          "mongodb3",
+          ">= 0.0.0"
+        ],
+        [
+          "mongo_chef_gem",
+          ">= 0.0.0"
+        ]
+      ],
+      "mongotest (0.0.0)": [
+        [
+          "mongodb3",
+          ">= 0.0.0"
+        ],
+        [
+          "mongodb3-objects",
+          ">= 0.0.0"
+        ]
+      ],
+      "packagecloud (1.0.0)": [
+
+      ],
+      "runit (1.7.8)": [
+        [
+          "packagecloud",
+          ">= 0.0.0"
+        ]
+      ],
+      "user (0.7.0)": [
+
+      ],
+      "yum (5.1.0)": [
+
+      ]
+    }
+  }
+}
