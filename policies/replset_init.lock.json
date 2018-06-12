@@ -1,5 +1,5 @@
 {
-  "revision_id": "fd18392f5b5dce53e8d1f929574c03c252c7339053c9902c1c36843f247a72d1",
+  "revision_id": "48ba45c7defa6e85a3753e743c75d09d46567648d407a2b1860fd62835718d00",
   "name": "replset_init",
   "run_list": [
     "recipe[mongotest::test_replset_init]"
@@ -19,6 +19,28 @@
         "version": "7.0.0"
       }
     },
+    "build-essential": {
+      "version": "8.1.1",
+      "identifier": "2576e10b52babc28fbebc105c582a62d6a9b18a6",
+      "dotted_decimal_identifier": "10545283067984572.11535989042693506.182713992288422",
+      "cache_key": "build-essential-8.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.1.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.1.1/download",
+        "version": "8.1.1"
+      }
+    },
+    "mingw": {
+      "version": "2.0.2",
+      "identifier": "87dc0e77dd1ad387858fafd0f542fc82bd73af24",
+      "dotted_decimal_identifier": "38241076554570451.38145974032463170.277638454423332",
+      "cache_key": "mingw-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/2.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/2.0.2/download",
+        "version": "2.0.2"
+      }
+    },
     "mongo_chef_gem": {
       "version": "0.2.2",
       "identifier": "1833735053acbedbd960d2a046d0c0d9fcdc592e",
@@ -32,30 +54,29 @@
     },
     "mongodb3": {
       "version": "5.3.0",
-      "identifier": "218b6e2efca70ae93ee1a15e2bfc8aa71e507081",
-      "dotted_decimal_identifier": "9441979582424842.65652808369449980.152450372759681",
-      "cache_key": "mongodb3-16dc4137ec310e279bd82d2ff6432de5732faf11",
-      "origin": "git://github.com/loki-dv/chef-mongodb3.git",
+      "identifier": "fdae82c7cc0447a7b4983f91797e68fa7d6e2012",
+      "dotted_decimal_identifier": "71405045828813895.47204887105206654.115425055481874",
+      "cache_key": "mongodb3-5.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mongodb3/versions/5.3.0/download",
       "source_options": {
-        "git": "git://github.com/loki-dv/chef-mongodb3.git",
-        "revision": "16dc4137ec310e279bd82d2ff6432de5732faf11",
-        "branch": "master"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mongodb3/versions/5.3.0/download",
+        "version": "5.3.0"
       }
     },
     "mongodb3-objects": {
       "version": "0.4.6",
-      "identifier": "e4dbd14c9bfb74e99566819bf8e07d66ad8bf245",
-      "dotted_decimal_identifier": "64417986669968244.65747937067268320.137879951766085",
+      "identifier": "6964692a013f52971bccdd265dd2826d750ff7d4",
+      "dotted_decimal_identifier": "29665275393687378.42533288180866514.143406627026900",
       "source": "..",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "https://github.com/loki-dv/chef-mongodb3-objects.git",
-        "revision": "f8694519fc9c70e6ff50c0fec68d57d6d694e3b2",
+        "remote": null,
+        "revision": "a5cd531e72f2d88e177976b05cbf440e8346d008",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/Replace_deprecated_node.set_to_node.default"
+
         ]
       },
       "source_options": {
@@ -70,12 +91,12 @@
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "https://github.com/loki-dv/chef-mongodb3-objects.git",
-        "revision": "f8694519fc9c70e6ff50c0fec68d57d6d694e3b2",
+        "remote": null,
+        "revision": "a5cd531e72f2d88e177976b05cbf440e8346d008",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/Replace_deprecated_node.set_to_node.default"
+
         ]
       },
       "source_options": {
@@ -104,6 +125,28 @@
         "version": "1.7.8"
       }
     },
+    "sc-mongodb": {
+      "version": "1.0.1",
+      "identifier": "fd2a2b515c813c10635397c0887d356ec14f9805",
+      "dotted_decimal_identifier": "71259534644773180.4612810306783357.58749805893637",
+      "cache_key": "sc-mongodb-1.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sc-mongodb/versions/1.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sc-mongodb/versions/1.0.1/download",
+        "version": "1.0.1"
+      }
+    },
+    "seven_zip": {
+      "version": "3.0.0",
+      "identifier": "91ab727ea5b817801e0799cc82a03910a806f91b",
+      "dotted_decimal_identifier": "41002379862456343.36061815012885152.62743701289243",
+      "cache_key": "seven_zip-3.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/3.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/3.0.0/download",
+        "version": "3.0.0"
+      }
+    },
     "user": {
       "version": "0.7.0",
       "identifier": "20811bf2f6e62596d99c589bee75acca7475c0da",
@@ -113,6 +156,17 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/user/versions/0.7.0/download",
         "version": "0.7.0"
+      }
+    },
+    "windows": {
+      "version": "4.3.1",
+      "identifier": "e072dd77af414fb8967774378211f0d85c38cf6a",
+      "dotted_decimal_identifier": "63176690304500047.51956835509830161.264812050829162",
+      "cache_key": "windows-4.3.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/4.3.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/4.3.1/download",
+        "version": "4.3.1"
       }
     },
     "yum": {
@@ -140,12 +194,20 @@
         "= 7.0.0"
       ],
       [
+        "build-essential",
+        "= 8.1.1"
+      ],
+      [
+        "mingw",
+        "= 2.0.2"
+      ],
+      [
         "mongo_chef_gem",
         "= 0.2.2"
       ],
       [
         "mongodb3",
-        ">= 0.0.0"
+        "= 5.3.0"
       ],
       [
         "mongodb3-objects",
@@ -164,8 +226,20 @@
         "= 1.7.8"
       ],
       [
+        "sc-mongodb",
+        "= 1.0.1"
+      ],
+      [
+        "seven_zip",
+        "= 3.0.0"
+      ],
+      [
         "user",
         "= 0.7.0"
+      ],
+      [
+        "windows",
+        "= 4.3.1"
       ],
       [
         "yum",
@@ -175,6 +249,22 @@
     "dependencies": {
       "apt (7.0.0)": [
 
+      ],
+      "build-essential (8.1.1)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "mingw",
+          ">= 1.1.0"
+        ]
+      ],
+      "mingw (2.0.2)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ]
       ],
       "mongo_chef_gem (0.2.2)": [
 
@@ -199,7 +289,7 @@
       ],
       "mongodb3-objects (0.4.6)": [
         [
-          "mongodb3",
+          "sc-mongodb",
           ">= 0.0.0"
         ],
         [
@@ -226,7 +316,30 @@
           ">= 0.0.0"
         ]
       ],
+      "sc-mongodb (1.0.1)": [
+        [
+          "apt",
+          ">= 1.8.2"
+        ],
+        [
+          "yum",
+          ">= 3.0.0"
+        ],
+        [
+          "build-essential",
+          ">= 5.0.0"
+        ]
+      ],
+      "seven_zip (3.0.0)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
       "user (0.7.0)": [
+
+      ],
+      "windows (4.3.1)": [
 
       ],
       "yum (5.1.0)": [

@@ -13,5 +13,5 @@ chef_version '~> 14'
 supports 'centos', '>= 6.0'
 supports 'redhat', '>= 6.0'
 
-depends 'mongodb3'
+depends 'sc-mongodb'
 depends 'mongo_chef_gem'
