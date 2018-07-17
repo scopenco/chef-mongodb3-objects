@@ -1,5 +1,5 @@
 {
-  "revision_id": "5296d0e602973a6e054d85d9424f69b4cf417f072997d9baef07276c9619df72",
+  "revision_id": "77f322c623a76e2f48ac91c5338d747d86dd58a2684b43ded1578fb1127e24d5",
   "name": "standalone",
   "run_list": [
     "recipe[mongotest::test_standalone]"
@@ -65,18 +65,18 @@
     },
     "mongodb3-objects": {
       "version": "0.4.6",
-      "identifier": "dc04589ffd61aaa5a0b0ee9f61376d981e2ca25e",
-      "dotted_decimal_identifier": "61929273564160426.46620052935369015.120500108698206",
+      "identifier": "36c57809d24b4baa8c48f5ecd9b1957e4181687a",
+      "dotted_decimal_identifier": "15416768093899595.48004991032285617.164369497417850",
       "source": "..",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": "a5cd531e72f2d88e177976b05cbf440e8346d008",
+        "remote": "https://github.com/loki-dv/chef-mongodb3-objects.git",
+        "revision": "91c181a6878aabd0b58e011d58107441f74abde2",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/Able_to_using_sc_mongodb_cookbook"
         ]
       },
       "source_options": {
@@ -85,18 +85,18 @@
     },
     "mongotest": {
       "version": "0.0.0",
-      "identifier": "301c3fa5f7b90fa9fb4f73413c699a4781cc85dd",
-      "dotted_decimal_identifier": "13541858575104271.47845589718744169.169631911019997",
+      "identifier": "c5fdcbcdf96663685e81c3e6290f599e7a26da92",
+      "dotted_decimal_identifier": "55729622187861603.29377309008341263.98537189071506",
       "source": "../test/fixtures/cookbooks/mongotest",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": "a5cd531e72f2d88e177976b05cbf440e8346d008",
+        "remote": "https://github.com/loki-dv/chef-mongodb3-objects.git",
+        "revision": "91c181a6878aabd0b58e011d58107441f74abde2",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/Able_to_using_sc_mongodb_cookbook"
         ]
       },
       "source_options": {
@@ -159,14 +159,14 @@
       }
     },
     "windows": {
-      "version": "4.3.1",
-      "identifier": "e072dd77af414fb8967774378211f0d85c38cf6a",
-      "dotted_decimal_identifier": "63176690304500047.51956835509830161.264812050829162",
-      "cache_key": "windows-4.3.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/4.3.1/download",
+      "version": "4.3.3",
+      "identifier": "eb3e2f21fe3e9028e066b5d56f23320e5507237f",
+      "dotted_decimal_identifier": "66214991681699472.11505730810375971.55037137462143",
+      "cache_key": "windows-4.3.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/4.3.3/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/4.3.1/download",
-        "version": "4.3.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/4.3.3/download",
+        "version": "4.3.3"
       }
     },
     "yum": {
@@ -239,7 +239,7 @@
       ],
       [
         "windows",
-        "= 4.3.1"
+        "= 4.3.3"
       ],
       [
         "yum",
@@ -299,7 +299,7 @@
       ],
       "mongotest (0.0.0)": [
         [
-          "mongodb3",
+          "sc-mongodb",
           ">= 0.0.0"
         ],
         [
@@ -339,7 +339,7 @@
       "user (0.7.0)": [
 
       ],
-      "windows (4.3.1)": [
+      "windows (4.3.3)": [
 
       ],
       "yum (5.1.0)": [

@@ -1,3 +1,3 @@
 name 'mongotest'
-depends 'mongodb3'
+depends 'sc-mongodb'
 depends 'mongodb3-objects'
