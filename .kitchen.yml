@@ -6,116 +6,115 @@ provisioner:
   name: chef_zero
   cookbooks_path: test/fixtures/cookbooks
   data_bags_path: test/fixtures/data_bags
-  require_chef_omnibus: 13.8.5
 
 platforms:
   - name: centos-7.4
 
 suites:
   - name: standalone
-    run_list:
-      - recipe[mongotest::test_standalone]
+    provisioner:
+      policyfile_path: policies/standalone.rb
 
   - name: replset1
-    run_list:
-      - recipe[mongotest::test_replset]
     driver:
       network:
         private_network:
           ip: "172.16.20.10"
+    provisioner:
+      policyfile_path: policies/replset.rb
 
   - name: replset2
-    run_list:
-      - recipe[mongotest::test_replset]
     driver:
       network:
         private_network:
           ip: "172.16.20.11"
+    provisioner:
+      policyfile_path: policies/replset.rb
 
   - name: replset-hidden
-    run_list:
-      - recipe[mongotest::test_replset]
     driver:
       network:
         private_network:
           ip: "172.16.20.12"
+    provisioner:
+      policyfile_path: policies/replset.rb
 
   - name: replset3
-    run_list:
-      - recipe[mongotest::test_replset_init]
     driver:
       network:
         private_network:
           ip: "172.16.20.13"
+    provisioner:
+      policyfile_path: policies/replset_init.rb
 
   - name: shard1
-    run_list:
-      - recipe[mongotest::test_shard]
     driver:
       network:
         private_network:
           ip: "172.16.20.21"
+    provisioner:
+      policyfile_path: policies/shard.rb
 
   - name: shard2
-    run_list:
-      - recipe[mongotest::test_shard]
     driver:
       network:
         private_network:
           ip: "172.16.20.22"
+    provisioner:
+      policyfile_path: policies/shard.rb
 
   - name: cfg1
-    run_list:
-      - recipe[mongotest::test_cfg]
     driver:
       network:
         private_network:
           ip: "172.16.20.23"
+    provisioner:
+      policyfile_path: policies/cfg.rb
 
   - name: cfg2
-    run_list:
-      - recipe[mongotest::test_cfg]
     driver:
       network:
         private_network:
           ip: "172.16.20.24"
+    provisioner:
+      policyfile_path: policies/cfg.rb
 
   - name: cfg3
-    run_list:
-      - recipe[mongotest::test_cfg_init]
     driver:
       network:
         private_network:
           ip: "172.16.20.25"
+    provisioner:
+      policyfile_path: policies/cfg_init.rb
 
   - name: shard_set1
-    run_list:
-      - recipe[mongotest::test_shard_set]
     driver:
       network:
         private_network:
           ip: "172.16.20.26"
+    provisioner:
+      policyfile_path: policies/shard_set.rb
 
   - name: shard_set2
-    run_list:
-      - recipe[mongotest::test_shard_set]
     driver:
       network:
         private_network:
           ip: "172.16.20.27"
+    provisioner:
+      policyfile_path: policies/shard_set.rb
 
   - name: shard_set3
-    run_list:
-      - recipe[mongotest::test_shard_init]
     driver:
       network:
         private_network:
           ip: "172.16.20.28"
+    provisioner:
+      policyfile_path: policies/shard_init.rb
 
   - name: mongos
-    run_list:
-      - recipe[mongotest::test_mongos]
     driver:
       network:
         private_network:
           ip: "172.16.20.29"
+    provisioner:
+      policyfile_path: policies/mongos.rb

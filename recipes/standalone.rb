@@ -17,10 +17,10 @@
 # limitations under the License.
 #
 
-node.set['mongodb3']['config']['mongod']['security']['authorization'] = 'enabled'
+node.default['mongodb']['config']['auth'] = true
 
-include_recipe 'mongodb3::package_repo'
-include_recipe 'mongodb3::default'
+include_recipe 'sc-mongodb::install'
+include_recipe 'sc-mongodb::default'
 
 service 'mongod' do
   supports start: true, stop: true, restart: true, status: true

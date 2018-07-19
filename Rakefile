@@ -5,6 +5,17 @@ require 'foodcritic'
 require 'cookstyle'
 require 'kitchen'
 require 'rubocop/rake_task'
+require 'chef-dk/cli'
+
+def execute_chefdk(glob_path, command)
+  Dir.glob(glob_path).each do |file|
+    args = command.split(' ') << file
+    cli = ChefDK::CLI.new(args)
+    subcommand_name, *subcommand_params = cli.argv
+    subcommand = cli.instantiate_subcommand(subcommand_name)
+    subcommand.run_with_default_options(subcommand_params)
+  end
+end
 
 # Style tests. Rubocop and Foodcritic
 namespace :style do
@@ -60,6 +71,18 @@ namespace :integration do
     sharding.each { |n| Kitchen::Config.new.instances.get(n).converge }
     sharding.each { |n| Kitchen::Config.new.instances.get(n).verify }
     sharding.each { |n| Kitchen::Config.new.instances.get(n).destroy }
+  end
+end
+
+namespace :policyfile do
+  desc 'Run "chef install" for all files `policies/*.rb`'
+  task :install do
+    execute_chefdk('policies/*.rb', 'install')
+  end
+
+  desc 'Run "chef update" for all files `policies/*.rb`'
+  task :update do
+    execute_chefdk('policies/*.rb', 'update')
   end
 end
 
