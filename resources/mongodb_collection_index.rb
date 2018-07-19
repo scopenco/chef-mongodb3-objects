@@ -65,7 +65,7 @@ action :create do
     Chef::Log.warn("Create index #{new_resource.name} for collection #{new_resource.collection}")
     begin
       client = mongo_connection(connection_info)
-      client_db = client.use(database)
+      client_db = client.use(new_resource.database)
       db = client_db.database
       new_resource.index['name'] = new_resource.name
       db.command(BSON::Document.new(createIndexes: new_resource.collection, indexes: [new_resource.index]))
