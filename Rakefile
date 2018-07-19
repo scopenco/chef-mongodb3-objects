@@ -75,6 +75,11 @@ namespace :integration do
 end
 
 namespace :policyfile do
+  desc 'Run "chef install" for all files `policies/*.rb`'
+  task :install do
+    execute_chefdk('policies/*.rb', 'install')
+  end
+
   desc 'Run "chef update" for all files `policies/*.rb`'
   task :update do
     execute_chefdk('policies/*.rb', 'update')
