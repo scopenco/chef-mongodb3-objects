@@ -17,11 +17,8 @@
 # limitations under the License.
 #
 
-#node.default['mongodb3']['config']['mongod']['security']['authorization'] = 'enabled'
 node.default['mongodb']['config']['auth'] = true
 
-#include_recipe 'mongodb3::package_repo'
-#include_recipe 'mongodb3::default'
 include_recipe 'sc-mongodb::install'
 include_recipe 'sc-mongodb::default'
 
