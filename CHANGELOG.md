@@ -1,3 +1,7 @@
+## 0.5.0 (July 19, 2018)
+  - Fix resource mongodb_collection_index
+  - Switch to policyfiles
+
 ## 0.4.6 (May 8, 2018)
   - Change cookbook location
 
