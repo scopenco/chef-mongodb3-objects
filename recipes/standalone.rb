@@ -17,14 +17,5 @@
 # limitations under the License.
 #
 
-node.default['mongodb']['config']['auth'] = true
-
-include_recipe 'sc-mongodb::install'
 include_recipe 'sc-mongodb::default'
-
-service 'mongod' do
-  supports start: true, stop: true, restart: true, status: true
-  action [:enable, :start]
-end
-
 include_recipe 'mongodb3-objects::default'
