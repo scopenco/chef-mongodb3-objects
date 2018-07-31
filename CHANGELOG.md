@@ -1,3 +1,6 @@
+## 0.5.1 (July 31, 2018)
+  - Simplify mongodb standalone recipe
+
 ## 0.5.0 (July 19, 2018)
   - Fix resource mongodb_collection_index
   - Switch to policyfiles
